@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -74,6 +75,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         monitor?.stop()
     }
     
+    
+    func startAtLogin(){
+        let launcherAppId = "com.xaoxuu.Translate.LaunchItem"
+        
+        SMLoginItemSetEnabled(launcherAppId as CFString, true)
+        var startedAtLogin = false
+        for app in NSWorkspace.shared.runningApplications {
+            if app.bundleIdentifier == launcherAppId {
+                startedAtLogin = true
+            }
+        }
+        
+        if startedAtLogin {
+            DistributedNotificationCenter.default().post(name: NSNotification.Name.init("killme"), object: Bundle.main.bundleIdentifier)
+        }
+    }
     
 }
 

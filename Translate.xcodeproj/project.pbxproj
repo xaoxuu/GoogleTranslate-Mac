@@ -14,7 +14,26 @@
 		CD14C41B2257A0E200148703 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14C4192257A0E200148703 /* WebVC.swift */; };
 		CD14C41C2257A0E200148703 /* WebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD14C41A2257A0E200148703 /* WebVC.xib */; };
 		CD14C41E2257A2E100148703 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14C41D2257A2E100148703 /* EventMonitor.swift */; };
+		CD14C4262257ACBD00148703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD14C4252257ACBD00148703 /* AppDelegate.swift */; };
+		CD14C4282257ACBE00148703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD14C4272257ACBE00148703 /* Assets.xcassets */; };
+		CD14C42B2257ACBE00148703 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD14C4292257ACBE00148703 /* MainMenu.xib */; };
+		CD14C4332257AD4700148703 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD14C4322257AD4700148703 /* Cocoa.framework */; };
+		CD14C4352257AD5100148703 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD14C4342257AD5100148703 /* ServiceManagement.framework */; };
+		CDF8999C2257B13E003378A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD14C4322257AD4700148703 /* Cocoa.framework */; };
+		CDF8999D2257B146003378A8 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD14C4342257AD5100148703 /* ServiceManagement.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD14C4312257AD2900148703 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD14C401225797A800148703 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +46,14 @@
 		CD14C4192257A0E200148703 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		CD14C41A2257A0E200148703 /* WebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebVC.xib; sourceTree = "<group>"; };
 		CD14C41D2257A2E100148703 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		CD14C4232257ACBD00148703 /* LaunchItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD14C4252257ACBD00148703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD14C4272257ACBE00148703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD14C42A2257ACBE00148703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CD14C42C2257ACBE00148703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD14C42D2257ACBE00148703 /* LaunchItem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchItem.entitlements; sourceTree = "<group>"; };
+		CD14C4322257AD4700148703 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD14C4342257AD5100148703 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +61,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF8999D2257B146003378A8 /* ServiceManagement.framework in Frameworks */,
+				CDF8999C2257B13E003378A8 /* Cocoa.framework in Frameworks */,
 				CD14C41422579CB900148703 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD14C4202257ACBD00148703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD14C4352257AD5100148703 /* ServiceManagement.framework in Frameworks */,
+				CD14C4332257AD4700148703 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CD14C403225797A800148703 /* Translate */,
+				CD14C4242257ACBD00148703 /* LaunchItem */,
 				CD14C402225797A800148703 /* Products */,
 				CD14C41222579CB900148703 /* Frameworks */,
 			);
@@ -54,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CD14C401225797A800148703 /* Translate.app */,
+				CD14C4232257ACBD00148703 /* LaunchItem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +116,23 @@
 		CD14C41222579CB900148703 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD14C4342257AD5100148703 /* ServiceManagement.framework */,
+				CD14C4322257AD4700148703 /* Cocoa.framework */,
 				CD14C41322579CB900148703 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD14C4242257ACBD00148703 /* LaunchItem */ = {
+			isa = PBXGroup;
+			children = (
+				CD14C4252257ACBD00148703 /* AppDelegate.swift */,
+				CD14C4272257ACBE00148703 /* Assets.xcassets */,
+				CD14C4292257ACBE00148703 /* MainMenu.xib */,
+				CD14C42C2257ACBE00148703 /* Info.plist */,
+				CD14C42D2257ACBE00148703 /* LaunchItem.entitlements */,
+			);
+			path = LaunchItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +155,24 @@
 			productReference = CD14C401225797A800148703 /* Translate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CD14C4222257ACBD00148703 /* LaunchItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD14C42E2257ACBE00148703 /* Build configuration list for PBXNativeTarget "LaunchItem" */;
+			buildPhases = (
+				CD14C41F2257ACBD00148703 /* Sources */,
+				CD14C4202257ACBD00148703 /* Frameworks */,
+				CD14C4212257ACBD00148703 /* Resources */,
+				CD14C4312257AD2900148703 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchItem;
+			productName = LaunchItem;
+			productReference = CD14C4232257ACBD00148703 /* LaunchItem.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +184,14 @@
 				ORGANIZATIONNAME = "Titan Studio";
 				TargetAttributes = {
 					CD14C400225797A800148703 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					CD14C4222257ACBD00148703 = {
 						CreatedOnToolsVersion = 10.2;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -135,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				CD14C400225797A800148703 /* Translate */,
+				CD14C4222257ACBD00148703 /* LaunchItem */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +228,15 @@
 				CD14C407225797A900148703 /* Assets.xcassets in Resources */,
 				CD14C41C2257A0E200148703 /* WebVC.xib in Resources */,
 				CD14C40A225797A900148703 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD14C4212257ACBD00148703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD14C4282257ACBE00148703 /* Assets.xcassets in Resources */,
+				CD14C42B2257ACBE00148703 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +253,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD14C41F2257ACBD00148703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD14C4262257ACBD00148703 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -170,6 +268,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CD14C409225797A900148703 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CD14C4292257ACBE00148703 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD14C42A2257ACBE00148703 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -334,6 +440,48 @@
 			};
 			name = Release;
 		};
+		CD14C42F2257ACBE00148703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchItem/LaunchItem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 34W5TB5KD2;
+				INFOPLIST_FILE = LaunchItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xaoxuu.Translate.LaunchItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD14C4302257ACBE00148703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchItem/LaunchItem.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 34W5TB5KD2;
+				INFOPLIST_FILE = LaunchItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xaoxuu.Translate.LaunchItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +499,15 @@
 			buildConfigurations = (
 				CD14C410225797A900148703 /* Debug */,
 				CD14C411225797A900148703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD14C42E2257ACBE00148703 /* Build configuration list for PBXNativeTarget "LaunchItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD14C42F2257ACBE00148703 /* Debug */,
+				CD14C4302257ACBE00148703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
