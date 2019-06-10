@@ -28,7 +28,7 @@
                     </userDefinedRuntimeAttributes>
                 </webView>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="VVR-LX-wwi">
-                    <rect key="frame" x="266" y="546" width="50" height="50"/>
+                    <rect key="frame" x="266" y="4" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="M9t-RN-N0A"/>
                         <constraint firstAttribute="height" constant="50" id="U1S-LU-sxC"/>
@@ -36,6 +36,8 @@
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon_quit" imagePosition="left" borderStyle="border" transparent="YES" sound="Morse" inset="2" id="Fz6-5Z-Dvu">
                         <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent">q</string>
+                        <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                     </buttonCell>
                     <connections>
                         <action selector="didTappedQuit:" target="-1" id="zaI-rE-cV6"/>
@@ -44,9 +46,9 @@
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="VVR-LX-wwi" secondAttribute="trailing" constant="4" id="7nf-Sd-j6l"/>
-                <constraint firstItem="VVR-LX-wwi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="4" id="9EZ-Cr-wbG"/>
                 <constraint firstAttribute="trailing" secondItem="AD3-30-zaq" secondAttribute="trailing" id="NfB-XX-Ofy"/>
                 <constraint firstItem="AD3-30-zaq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="NpW-rN-Z8F"/>
+                <constraint firstAttribute="bottom" secondItem="VVR-LX-wwi" secondAttribute="bottom" constant="4" id="uDa-tP-210"/>
                 <constraint firstItem="AD3-30-zaq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="vS7-v2-qHA"/>
                 <constraint firstAttribute="bottom" secondItem="AD3-30-zaq" secondAttribute="bottom" id="zqH-e7-5xB"/>
             </constraints>

@@ -21,15 +21,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         
-//        statusItem.menu = statusMenu
-        
         statusItem.image = NSImage.init(named: "logo_menu")
         let btn = statusItem.button
         btn?.image = NSImage.init(named: "logo_menu")
         
+        popover.behavior = .transient
         popover.contentViewController = NSViewController.init(nibName: "WebVC", bundle: .main)
         btn?.action = #selector(toggleWebView(_:))
-        
         monitor = EventMonitor.init(mask: .keyUp) { [weak self] (eve) in
             if self?.popover.isShown ?? false {
                 self?.closePopover(sender: eve)
@@ -49,9 +47,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
             NSApp.terminate(self)
         }
-    }
-    @IBAction func didTapped(_ sender: NSMenuItem) {
-        NSApp.terminate(self)
     }
     
     @objc func toggleWebView(_ sender: NSStatusBarButton) {
